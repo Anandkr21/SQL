@@ -1,6 +1,4 @@
 // npm i express nodemon sequelize mysql2
-
-
 // npm i express sequelize mysql2
 
 const express = require('express');

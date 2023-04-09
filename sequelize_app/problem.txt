@@ -1,0 +1,29 @@
+Create an API endpoint with node and express with Sequelize
+
+Create an 
+
+- Orders Table,
+- Users Table,
+- Timelines Table
+
+you can add more tables if required.
+
+**A user can have many orders.**
+
+**An order can have info user who purchased it, and other information required.**
+
+- order will also have a status field ( which will be having CONFIRMED | PREPARING TO DISPATCH | DISPATCHED | DELIVERED as status
+- by default it will be confirmed
+- every time the status is updated, the timelines table will be updated
+
+**Timelines** 
+
+- will be referencing a users table,
+- it will have a message field which will describe what action took place ( previous state, and new state )
+- it will have a timestamp as well
+
+**Create the following API Endpoints**
+
+- **Create an Order**
+- **Update an Order Status**
+- **Get Order details by user** ( should have timelines data as well )

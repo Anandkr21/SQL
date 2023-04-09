@@ -3,9 +3,9 @@
 
 const express = require('express');
 const sequelize = require('sequelize');
-require('dotenv').config;
+require('dotenv').config();
 
-const seq = new sequelize('admission', 'root', 'enterSQLpassword', {
+const seq = new sequelize('admission', 'root', "enteryourpassword", {
     host: 'localhost',
     dialect: 'mysql', // postgress | mariaDB
 })

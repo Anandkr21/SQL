@@ -34,7 +34,7 @@ app.post("/create", async (req, res) => {
 // create student
 app.post("/create-student", async (req, res) => {
     try {
-        const { name, age, email , courseID } = req.body;
+        const { name, age, email, courseID } = req.body;
         const data = await student.create({
             name,
             age,

@@ -1,10 +1,10 @@
 module.exports = (sequelize, DataTypes) => {
     const student = sequelize.define("student", {
-        name: {type: DataTypes.STRING, allowNull: false},
-        age:DataTypes.INTEGER,
-        email:DataTypes.STRING,
+        name: { type: DataTypes.STRING, allowNull: false },
+        age: DataTypes.INTEGER,
+        email: DataTypes.STRING,
         courseID: {
-            type : DataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'course',
                 key: 'id',
